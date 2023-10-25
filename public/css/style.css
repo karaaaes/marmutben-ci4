@@ -573,15 +573,10 @@ ul.right_icon li img {
 }
 
 .blodark {
-     color: white !important;
+     color: black !important;
      font-family: 'Poppins';
      font-weight: 600;
      font-size: 60px;
-     text-shadow:
-3px -1px 0 black,  /* Shadow atas-kiri (hitam) */
-    1px -1px 0 black,   /* Shadow atas-kanan (hitam) */
-    -1px 1px 0 black,   /* Shadow bawah-kiri (hitam) */
-    1px 1px 0 black;    /* Shadow bawah-kanan (hitam) */
 }
 
 .text-bg {
