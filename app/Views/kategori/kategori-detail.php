@@ -23,7 +23,7 @@
                             <div class="news_text mb-3">
                                 <div class="title-kategori">Anakan</div>
                             </div>
-                        </div>
+                        </div> 
                     </a>
                 </div>
                 <div class="kategori-item">
