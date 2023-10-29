@@ -158,7 +158,7 @@ include('core/core_functions.php');
             ?>
             <div class="menu-item">
                <a
-                  href="marmut-detail.php?id=<?php echo $bestSeller['marmut_id']?>&categories=<?php echo $bestSeller['categories_marmut']?>">
+                  href="<?php echo base_url() . "details/" . $bestSeller['marmut_id'] . "/". $bestSeller['categories_marmut']?>">
                   <div class="news_item">
                      <div class="news_img_best">
                         <figure><img src="<?php echo $bestSeller['image_marmut']; ?>"
@@ -187,7 +187,7 @@ include('core/core_functions.php');
 ?>
          </div>
          <div class="col-md-12">
-            <a class="read_more" href="kategori.php">See More</a>
+            <a class="read_more" href="<?php echo base_url() . "kategori"?>">See More</a>
          </div>
       </div>
    </div>

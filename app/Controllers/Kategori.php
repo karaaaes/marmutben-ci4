@@ -6,9 +6,7 @@ use App\Models\Mpromo;
 
 class Kategori extends BaseController
 {
-
-    public function index(): string
-    {
+    public function index(){
         $modelKategori = new Mkategori();
         $data['dataMarmutanakan'] = $modelKategori->getKategoriMarmut(1);
         $data['dataMarmutRemaja'] = $modelKategori->getKategoriMarmut(2);
@@ -32,8 +30,8 @@ class Kategori extends BaseController
 
         if (empty($dataKategori)) {
             // Menggunakan session untuk menyimpan pesan notifikasi
-    $session = session();
-    $session->setFlashdata('message', 'Data Kategori Tidak Ada');
+            $session = session();
+            $session->setFlashdata('message', 'Data Kategori Tidak Ada');
             // Mengarahkan pengguna kembali ke routes /kategori
             return redirect()->to(base_url().'kategori');
         }

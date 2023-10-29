@@ -1,0 +1,86 @@
+CRITICAL - 2023-10-27 08:23:04 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Admin/Home::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Admin/Home::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 08:29:41 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\Admin/Admin::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\Admin/Admin::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 08:37:55 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\Admin\Admin/Admin::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\Admin\\Admin/Admin::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('admin')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('admin')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:13:19 --> include(../database/conn.php): Failed to open stream: No such file or directory
+in FCPATH\core_admin\core_functions.php on line 2.
+ 1 FCPATH\core_admin\core_functions.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(../database/conn.php): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\core_admin\\core_functions.php', 2)
+ 2 FCPATH\core_admin\core_functions.php(2): include()
+ 3 APPPATH\Views\admin\index\index.php(3): include('C:\\laragon\\www\\marmutben-codeigniter4\\core_admin\\core_functions.php')
+ 4 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\index\\index.php')
+ 5 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/index/index', [], true)
+ 7 APPPATH\Controllers\AdminHome.php(9): view('admin/index/index')
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:13:44 --> Call to a member function query() on null
+in FCPATH\core_admin\core_functions.php on line 953.
+ 1 APPPATH\Views\admin\index\index.php(5): countMarmutCategories()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\index\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/index/index', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(9): view('admin/index/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:20:58 --> Class "App\Models\MAadminhome" not found
+in APPPATH\Controllers\AdminHome.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:28:24 --> Call to a member function query() on null
+in FCPATH\core_admin\core_functions.php on line 969.
+ 1 APPPATH\Views\admin\index\index.php(5): getDataHit()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\index\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/index/index', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(12): view('admin/index/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:31:13 --> Call to a member function query() on null
+in FCPATH\core_admin\core_functions.php on line 969.
+ 1 APPPATH\Views\admin\index\index.php(5): getDataHit()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\index\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/index/index', [], true)
+ 5 APPPATH\Controllers\AdminHome.php(13): view('admin/index/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-27 09:31:31 --> Call to undefined function getAllLog()
+in APPPATH\Views\admin\index\index.php on line 218.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/index/index', [], true)
+ 4 APPPATH\Controllers\AdminHome.php(13): view('admin/index/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminHome->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminHome))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

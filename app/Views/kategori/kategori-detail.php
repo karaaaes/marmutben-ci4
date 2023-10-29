@@ -118,7 +118,7 @@
                 <div class="col-6 col-md-2 mb-3" style="padding-right: 0px; padding-left: 0px;">
                     <div class="menu-item menu-item-detail">
                         <a
-                            href="marmut-detail.php?id=<?php echo $marmutAnakan['id']?>&categories=<?php echo $marmutAnakan['categories_marmut']?>">
+                            href="<?php echo base_url() . "details/" . $marmutAnakan['id'] . "/" . $marmutAnakan['categories_marmut'] ?>">
                             <div class="news_item">
                                 <div class="news_img_best news_img_best_category">
                                     <figure><img src="<?= base_url($marmutAnakan['image_marmut']); ?>"></figure>

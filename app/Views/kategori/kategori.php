@@ -8,7 +8,7 @@
    <div id="project" class="project project-category">
       <div class="container">
          <?php if (session()->getFlashdata('message')) : ?>
-         <div class="alert alert-success" style="margin-top:120px;">
+         <div class="alert alert-danger" style="margin-top:120px;">
             <?= session()->getFlashdata('message') ?>
          </div>
          <?php endif; ?>
@@ -133,7 +133,7 @@
                ?>
                <div class="menu-item">
                   <a
-                     href="marmut-detail.php?id=<?php echo $marmutAnakan['id']?>&categories=<?php echo $marmutAnakan['categories_marmut']?>">
+                     href="<?php echo base_url() . "details/" . $marmutAnakan['id'] . "/" . $marmutAnakan['categories_marmut'] ?>">
                      <div class="news_item">
                         <div class="news_img_best">
                            <figure><img src="<?php echo $marmutAnakan['image_marmut'] ?>"></figure>
@@ -194,7 +194,7 @@
                ?>
             <div class="menu-item">
                <a
-                  href="marmut-detail.php?id=<?php echo $marmutRemaja['id']?>&categories=<?php echo $marmutRemaja['categories_marmut']?>">
+                  href="<?php echo base_url() . "details/" . $marmutRemaja['id'] . "/" . $marmutRemaja['categories_marmut'] ?>">
                   <div class="news_item">
                      <div class="news_img_best">
                         <figure><img src="<?php echo $marmutRemaja['image_marmut'] ?>"></figure>
@@ -255,7 +255,7 @@
                ?>
             <div class="menu-item">
                <a
-                  href="marmut-detail.php?id=<?php echo $marmutIndukan['id']?>&categories=<?php echo $marmutIndukan['categories_marmut']?>">
+                  href="<?php echo base_url() . "details/" . $marmutIndukan['id'] . "/" . $marmutIndukan['categories_marmut'] ?>">
                   <div class="news_item">
                      <div class="news_img_best">
                         <figure><img src="<?php echo $marmutIndukan['image_marmut'] ?>"></figure>
@@ -316,7 +316,7 @@
                ?>
             <div class="menu-item">
                <a
-                  href="marmut-detail.php?id=<?php echo $marmutBunting['id']?>&categories=<?php echo $marmutBunting['categories_marmut']?>">
+                  href="<?php echo base_url() . "details/" . $marmutBunting['id'] . "/" . $marmutBunting['categories_marmut'] ?>">
                   <div class="news_item">
                      <div class="news_img_best">
                         <figure><img src="<?php echo $marmutBunting['image_marmut'] ?>"></figure>
@@ -377,7 +377,7 @@
                ?>
             <div class="menu-item">
                <a
-                  href="marmut-detail.php?id=<?php echo $marmutIndukanHias['id']?>&categories=<?php echo $marmutIndukanHias['categories_marmut']?>">
+                  href="<?php echo base_url() . "details/" . $marmutIndukanHias['id'] . "/" . $marmutIndukanHias['categories_marmut'] ?>">
                   <div class="news_item">
                      <div class="news_img_best">
                         <figure><img src="<?php echo $marmutIndukanHias['image_marmut'] ?>"></figure>
@@ -438,7 +438,7 @@
             <div class="col-md-2">
                <div class="menu-item">
                   <a
-                     href="marmut-detail.php?id=<?php echo $marmutBuntingHias['id']?>&categories=<?php echo $marmutBuntingHias['categories_marmut']?>">
+                     href="<?php echo base_url() . "details/" . $marmutBuntingHias['id'] . "/" . $marmutBuntingHias['categories_marmut'] ?>">
                      <div class="news_item">
                         <div class="news_img_best">
                            <figure><img src="<?php echo $marmutBuntingHias['image_marmut'] ?>"></figure>
