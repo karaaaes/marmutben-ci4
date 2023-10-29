@@ -1,4 +1,4 @@
-<?php 
+<?php
 namespace App\Models;
 
 use CodeIgniter\Model;
@@ -50,5 +50,23 @@ class MAdminhome extends Model
         return $results;
     }
 
-    
+    public function getLog($firstDate , $lastDate){
+        if($firstDate != "" && $lastDate != ""){
+            $sql = "
+                SELECT * FROM t_marmutben_log 
+                WHERE timestamp BETWEEN '$firstDate' AND '$lastDate'
+                ORDER BY id DESC
+            ";
+        }else{
+            $sql = "
+                SELECT * FROM t_marmutben_log 
+                ORDER BY id DESC
+            ";
+        }
+
+        $query = $this->db->query($sql);
+        // Mengambil hasil query dalam bentuk array
+        $results = $query->getResultArray();
+        return $results;
+    }
 }

@@ -10,17 +10,17 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/fontawesome-free/css/all.min.css"?>">
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/overlayScrollbars/css/OverlayScrollbars.min.css"?>">
   <!-- summernote -->
-  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/summernote/summernote-bs4.min.css"?>">
   <!-- Theme style -->
-  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() . "dist/css/adminlte.min.css"?>">
   <!-- DataTables -->
-  <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/datatables-bs4/css/dataTables.bootstrap4.min.css"?>">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/datatables-responsive/css/responsive.bootstrap4.min.css"?>">
+  <link rel="stylesheet" href="<?php echo base_url() . "plugins/datatables-buttons/css/buttons.bootstrap4.min.css"?>">
 </head>
 
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
@@ -66,7 +66,7 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="<?= $url; ?>" class="brand-link">
-        <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+        <img src="<?= base_url() . "dist/img/AdminLTELogo.png" ?>" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">Marmutben LTE</span>
       </a>
@@ -76,7 +76,7 @@
         <!-- Sidebar user panel (optional) -->
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
           <div class="image">
-            <img src="dist/img/hitsugaya_profile_160x160.png" class="img-circle elevation-2" alt="User Image">
+            <img src="<?= base_url() . "dist/img/hitsugaya_profile_160x160.png" ?>" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
             <a href="#" class="d-block">Admin</a>
@@ -101,7 +101,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.php" class="nav-link active" id="dashboard-tab">
+                  <a href="<?= base_url() . "admin/" ?>" class="nav-link active" id="dashboard-tab">
                     <!-- Tambahkan id="dashboard-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Dashboard</p>
@@ -121,7 +121,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./bestseller.php" class="nav-link" id="best-seller-tab">
+                  <a href="<?= base_url(). "admin/best_seller" ?>" class="nav-link" id="best-seller-tab">
                     <!-- Tambahkan id="best-seller-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Best Sellers</p>
@@ -141,7 +141,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./marmut-list.php" class="nav-link" id="marmut-list-tab">
+                  <a href="<?= base_url() . "admin/list" ?>" class="nav-link" id="marmut-list-tab">
                     <!-- Tambahkan id="marmut-list-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Marmut List</p>

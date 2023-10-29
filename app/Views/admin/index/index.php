@@ -242,7 +242,7 @@
                         </div>
                         <!-- /.card-body -->
                         <div class="card-footer text-center">
-                            <a href="log.php" class="uppercase">View All Log</a>
+                            <a href="<?php echo base_url() . "admin/log" ?>" class="uppercase">View All Log</a>
                         </div>
                         <!-- /.card-footer -->
                     </div>

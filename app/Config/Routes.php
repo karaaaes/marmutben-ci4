@@ -35,3 +35,13 @@ $routes->group('admin', function (RouteCollection $routes) {
     $routes->add('/', 'AdminHome::index');
 });
 
+$routes->get('/admin/log', 'AdminHome::log');
+$routes->post('/admin/log/filter', 'AdminHome::log');
+
+$routes->get('/admin/best_seller', 'AdminBestSeller::index');
+$routes->get('/admin/best_seller/(:num)/(:num)', 'AdminBestSeller::edit/$1/$2');
+$routes->post('/admin/best_seller', 'AdminBestSeller::action_edit');
+
+$routes->get('/admin/list', 'AdminMarmutList::index');
+$routes->get('/admin/list/(:num)', 'AdminMarmutList::edit/$1');
+$routes->post('/admin/list', 'AdminMarmutList::action_edit');
