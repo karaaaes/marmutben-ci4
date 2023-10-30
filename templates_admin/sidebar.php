@@ -148,7 +148,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./marmut-add.php" class="nav-link" id="form-general-tab">
+                  <a href="<?= base_url() . "admin/list/add" ?>" class="nav-link" id="form-general-tab">
                     <!-- Tambahkan id="form-general-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Add Marmut</p>
@@ -168,14 +168,14 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./ongkir.php" class="nav-link" id="ongkir-tab">
+                  <a href="<?= base_url() . "admin/ongkir" ?>" class="nav-link" id="ongkir-tab">
                     <!-- Tambahkan id="ongkir-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Ongkir</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./paket.php" class="nav-link" id="paket-tab">
+                  <a href="<?= base_url() . "admin/paket" ?>" class="nav-link" id="paket-tab">
                     <!-- Tambahkan id="paket-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Paket</p>
@@ -205,7 +205,7 @@
             </li>
             <li class="nav-item" id="logout">
               <!-- Tambahkan id="logout" di sini -->
-              <a href="settings.php" class="nav-link" id="logout-link">
+              <a href="<?= base_url() . "admin/settings" ?>" class="nav-link" id="logout-link">
                 <!-- Tambahkan id="logout-link" di sini -->
                 <i class="nav-icon fas fa-ellipsis-h"></i>
                 <p>Settings</p>

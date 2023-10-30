@@ -5,7 +5,8 @@ use CodeIgniter\Model;
 
 class MAdminmarmutlist extends Model
 {
-    // protected $table = 'my_table';
+    
+    protected $table = 't_marmutben_products';
 
     public function getListMarmut()
     {
@@ -41,6 +42,20 @@ class MAdminmarmutlist extends Model
             SELECT * FROM t_marmutben_categories
             WHERE id != '$idCategories'
             ORDER BY id ASC
+        ");
+
+        // Mengambil hasil query dalam bentuk array
+        $results = $query->getResultArray();
+        return $results;
+    }
+
+    public function checkAddMarmutAvailable($jenisMarmut, $categoriesMarmut){
+        // Contoh menjalankan kueri SQL SELECT
+        $query = $this->db->query("
+            SELECT id 
+            FROM t_marmutben_products 
+            WHERE jenis_marmut = '$jenisMarmut' 
+            AND categories_marmut = '$categoriesMarmut'
         ");
 
         // Mengambil hasil query dalam bentuk array
@@ -89,11 +104,31 @@ class MAdminmarmutlist extends Model
         return $results;
     }
 
+    public function insertMarmutData($jenisMarmut, $filePath, $categoriesMarmut, $description, $hargaMarmut, $dateCreated){
+        // Contoh menjalankan kueri SQL SELECT
+        $query = $this->db->query("
+            INSERT INTO t_marmutben_products (jenis_marmut, image_marmut, categories_marmut, description, harga, date_created) 
+            VALUES ('$jenisMarmut','$filePath','$categoriesMarmut','$description','$hargaMarmut','$dateCreated')
+        ");
+
+        return $query;
+    }
+
     public function updateMarmutData($sqlTambahan = "", $jenisMarmut, $categoriesMarmut, $description, $hargaMarmut, $idMarmut){
         // Contoh menjalankan kueri SQL SELECT
         $query = $this->db->query("
             UPDATE t_marmutben_products SET `jenis_marmut`='$jenisMarmut', `categories_marmut` = '$categoriesMarmut',
             `description` = '$description', `harga` = '$hargaMarmut' $sqlTambahan
+            WHERE id = '$idMarmut'
+        ");
+
+        return "success";
+    }
+
+    public function deleteMarmutData($idMarmut){
+        // Contoh menjalankan kueri SQL SELECT
+        $query = $this->db->query("
+            DELETE FROM t_marmutben_products
             WHERE id = '$idMarmut'
         ");
 
@@ -124,4 +159,16 @@ class MAdminmarmutlist extends Model
         return "success";
     }
 
+    public function getAllCategories(){
+        // Contoh menjalankan kueri SQL SELECT
+        $query = $this->db->query("
+            SELECT * FROM t_marmutben_categories 
+            ORDER BY id ASC
+        ");
+
+        // Mengambil hasil query dalam bentuk array
+        $results = $query->getResultArray();
+        return $results;
+    }
+    
 }

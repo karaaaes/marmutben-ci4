@@ -31,7 +31,6 @@ $routes->get('/paket', 'Paket::index');
 
 // Admin Section
 $routes->group('admin', function (RouteCollection $routes) {
-    // Grup rute admin
     $routes->add('/', 'AdminHome::index');
 });
 
@@ -45,3 +44,19 @@ $routes->post('/admin/best_seller', 'AdminBestSeller::action_edit');
 $routes->get('/admin/list', 'AdminMarmutList::index');
 $routes->get('/admin/list/(:num)', 'AdminMarmutList::edit/$1');
 $routes->post('/admin/list', 'AdminMarmutList::action_edit');
+$routes->get('/admin/list/add', 'AdminMarmutList::add');
+$routes->post('/admin/list/add', 'AdminMarmutList::action_add');
+$routes->post('/admin/list/delete', 'AdminMarmutList::action_delete');
+
+$routes->get('/admin/ongkir', 'AdminOngkir::index');
+$routes->post('/admin/ongkir/import_ongkir', 'AdminOngkir::import_ongkir');
+$routes->get('/admin/ongkir/delete_ongkir', 'AdminOngkir::delete_ongkir');
+
+$routes->get('/admin/paket', 'AdminPaket::index');
+$routes->post('/admin/paket/import_paket', 'AdminPaket::import_paket');
+$routes->post('/admin/paket/delete_paket', 'AdminPaket::delete_paket');
+$routes->post('/admin/paket/delete_all_paket', 'AdminPaket::delete_all_paket');
+
+$routes->get('/admin/settings', 'AdminSettings::index');
+$routes->post('/admin/settings/edit_config', 'AdminSettings::edit_config');
+

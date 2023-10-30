@@ -1,0 +1,247 @@
+CRITICAL - 2023-10-30 03:14:41 --> Undefined variable $getMarmut
+in APPPATH\Views\admin\marmut_list\edit.php on line 38.
+ 1 APPPATH\Views\admin\marmut_list\edit.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getMarmut', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\marmut_list\\edit.php', 38)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\marmut_list\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/marmut_list/edit', [], true)
+ 5 APPPATH\Controllers\AdminMarmutList.php(19): view('admin/marmut_list/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:14:54 --> Call to undefined function getAllCategories()
+in APPPATH\Views\admin\marmut_list\add.php on line 66.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/marmut_list/add', [], true)
+ 4 APPPATH\Controllers\AdminMarmutList.php(19): view('admin/marmut_list/add', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->add()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:34:41 --> Call to a member function getResultArray() on bool
+in APPPATH\Models\MAdminmarmutlist.php on line 114.
+ 1 APPPATH\Controllers\AdminMarmutList.php(55): App\Models\MAdminmarmutlist->insertMarmutData('Marmut Califf', 'images/marmut_653f24516a9db.png', '2', '<p>Pilihan indah menurut pecinta marmut 123</p>', '100000', '2023-10-30 03:34:41')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:41:54 --> move_uploaded_file(C:\laragon\www\marmutben-codeigniter4\writable\http://10.3.231.52/marmutben-codeigniter4/images/marmut_653f260202ed4.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminMarmutList.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(C:\\laragon\\www\\marmutben-codeigniter4\\writable\\http://10.3.231.52/marmutben-codeigniter4/images/marmut_653f260202ed4.png): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Controllers\\AdminMarmutList.php', 42)
+ 2 APPPATH\Controllers\AdminMarmutList.php(42): move_uploaded_file('C:\\Users\\MPI\\AppData\\Local\\Temp\\php7122.tmp', 'C:\\laragon\\www\\marmutben-codeigniter4\\writable\\http://10.3.231.52/marmutben-codeigniter4/images/marmut_653f260202ed4.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:43:16 --> move_uploaded_file(C:\laragon\www\marmutben-codeigniter4\writable\C:\laragon\www\marmutben-codeigniter4\writable\images/marmut_653f2654d96ae.png): Failed to open stream: No such file or directory
+in APPPATH\Controllers\AdminMarmutList.php on line 42.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'move_uploaded_file(C:\\laragon\\www\\marmutben-codeigniter4\\writable\\C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/marmut_653f2654d96ae.png): Failed to open stream: No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Controllers\\AdminMarmutList.php', 42)
+ 2 APPPATH\Controllers\AdminMarmutList.php(42): move_uploaded_file('C:\\Users\\MPI\\AppData\\Local\\Temp\\phpB4ED.tmp', 'C:\\laragon\\www\\marmutben-codeigniter4\\writable\\C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/marmut_653f2654d96ae.png')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:45:14 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminMarmutList.php(64): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:46:10 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminMarmutList.php(64): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:48:19 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f2783f3b35.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f2783f3b35.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:48:30 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/', 'marmut_653f278e627fd.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\images/', 'marmut_653f278e627fd.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:49:07 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/', 'marmut_653f27b3c02c8.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('http://10.3.231.52/marmutben-codeigniter4/images/', 'marmut_653f27b3c02c8.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:50:07 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f27efd5c33.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(45): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f27efd5c33.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:51:28 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\images/', 'marmut_653f28405cb89.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\images/', 'marmut_653f28405cb89.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:52:10 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/http://10.3.231.52/marmutben-codeigniter4/images/', 'marmut_653f286a8c6db.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('http://10.3.231.52/marmutben-codeigniter4/images/', 'marmut_653f286a8c6db.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 03:52:32 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminMarmutList.php(66): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 04:20:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminMarmutList.php(66): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 04:26:07 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f305fdf8f1.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(44): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f305fdf8f1.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 04:28:02 --> mkdir(): No such file or directory
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 185.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mkdir(): No such file or directory', 'C:\\laragon\\www\\marmutben-codeigniter4\\system\\HTTP\\Files\\UploadedFile.php', 185)
+ 2 SYSTEMPATH\HTTP\Files\UploadedFile.php(185): mkdir('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 511, true)
+ 3 SYSTEMPATH\HTTP\Files\UploadedFile.php(139): CodeIgniter\HTTP\Files\UploadedFile->setPath('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/')
+ 4 SYSTEMPATH\HTTP\Files\UploadedFile.php(359): CodeIgniter\HTTP\Files\UploadedFile->move('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\uploads/C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f30d26af87.png')
+ 5 APPPATH\Controllers\AdminMarmutList.php(41): CodeIgniter\HTTP\Files\UploadedFile->store('C:\\laragon\\www\\marmutben-codeigniter4\\writable\\images/', 'marmut_653f30d26af87.png')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 04:28:48 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(863): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\AdminMarmutList.php(64): CodeIgniter\Model->__call('insertID', [])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminMarmutList->action_add()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminMarmutList))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:06:30 --> Call to undefined function getListOngkir()
+in APPPATH\Views\admin\ongkir\index.php on line 84.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/ongkir/index', [], true)
+ 4 APPPATH\Controllers\AdminOngkir.php(10): view('admin/ongkir/index')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminOngkir->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminOngkir))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:08:33 --> Call to undefined function getListOngkir()
+in APPPATH\Views\admin\ongkir\index.php on line 84.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/ongkir/index', [], true)
+ 4 APPPATH\Controllers\AdminOngkir.php(14): view('admin/ongkir/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminOngkir->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminOngkir))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:08:43 --> Undefined variable $dataOngkir
+in APPPATH\Views\admin\ongkir\index.php on line 85.
+ 1 APPPATH\Views\admin\ongkir\index.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataOngkir', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\ongkir\\index.php', 85)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\ongkir\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/ongkir/index', [], true)
+ 5 APPPATH\Controllers\AdminOngkir.php(14): view('admin/ongkir/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminOngkir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminOngkir))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:33:59 --> Call to a member function getFile() on null
+in APPPATH\Models\MAdminongkir.php on line 36.
+ 1 APPPATH\Controllers\AdminOngkir.php(29): App\Models\MAdminongkir->importCSVDataToDatabase('C:\\Users\\MPI\\AppData\\Local\\Temp\\phpEE57.tmp', 't_marmutben_ongkir')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminOngkir->import_ongkir()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminOngkir))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:39:00 --> Call to a member function getFile() on null
+in APPPATH\Models\MAdminongkir.php on line 35.
+ 1 APPPATH\Controllers\AdminOngkir.php(25): App\Models\MAdminongkir->importCSVDataToDatabase('C:\\Users\\MPI\\AppData\\Local\\Temp\\php863F.tmp', 't_marmutben_ongkir')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminOngkir->import_ongkir()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminOngkir))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 07:58:40 --> Call to a member function query() on null
+in FCPATH\core\core_functions.php on line 85.
+ 1 APPPATH\Views\admin\paket\index.php(86): getListPromo()
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\admin\\paket\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/paket/index', [], true)
+ 5 APPPATH\Controllers\AdminPaket.php(9): view('admin/paket/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminPaket->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPaket))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 09:12:48 --> Undefined array key "id_paket"
+in APPPATH\Controllers\AdminPaket.php on line 20.
+ 1 APPPATH\Controllers\AdminPaket.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Controllers\\AdminPaket.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminPaket->delete_paket()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPaket))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-30 09:13:06 --> Undefined array key "id_paket"
+in APPPATH\Controllers\AdminPaket.php on line 20.
+ 1 APPPATH\Controllers\AdminPaket.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_paket"', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Controllers\\AdminPaket.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminPaket->delete_paket()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminPaket))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

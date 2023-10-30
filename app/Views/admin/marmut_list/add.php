@@ -9,7 +9,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Form Edit Marmut</h1>
+          <h1>Form Add Marmut</h1>
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
@@ -34,8 +34,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="<?= base_url() . "admin/list" ?>" method="post" enctype="multipart/form-data">
-              <input type="text" name="id_marmut" class="form-control" value="<?= $getMarmut[0]['id'] ?>" hidden>
+            <form action="<?= base_url() . "admin/list/add" ?>" method="post" enctype="multipart/form-data">
               <div class="card-body">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Marmut</label>
@@ -45,7 +44,7 @@
                         <i class="fas fa-stream"></i>
                       </span>
                     </div>
-                    <input type="text" name="jenis_marmut" class="form-control" value="<?= $getMarmut[0]['jenis_marmut'] ?>" placeholder="Jenis Marmut">
+                    <input type="text" name="jenis_marmut" class="form-control" placeholder="Jenis Marmut" required>
                   </div>
                 </div>
                 <div class="form-group">
@@ -56,31 +55,31 @@
                         <i class="fas fa-dollar-sign"></i>
                       </span>
                     </div>
-                    <input type="number" name="harga_marmut" class="form-control" value="<?= $getMarmut[0]['harga']; ?>" placeholder="Harga">
+                    <input type="number" name="harga_marmut" class="form-control" placeholder="Harga" required>
                   </div>
                 </div>
                 <div class="form-group">
                   <label>Kategori Marmut</label>
-                  <select class="form-control" name="categories_marmut">
-                    <option value="<?= $getMarmut[0]['categories_marmut'];?>" selected><?= $getMarmut[0]['categories']; ?></option>
-                    <?php
-                    foreach($getCategories as $categories) :
+                  <select name="categories_marmut" class="form-control">
+                    <option selected disabled>--Pilih Categories--</option>
+                    <?php 
+                      foreach($dataCategories as $categories): 
                     ?>
                     <option value="<?= $categories['id']; ?>"><?= $categories['categories']; ?></option>
                     <?php
-                    endforeach
+                      endforeach
                     ?>
                   </select>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Description</label>
-                  <textarea id="summernote" name="description"><?= $getMarmut[0]['description']; ?></textarea>
+                  <textarea name="description" id="summernote" required></textarea>
                 </div>
                 <div class="form-group">
                   <label for="exampleInputFile">Upload Image Marmut</label>
                   <div class="input-group">
                     <div class="custom-file">
-                      <input type="file" name="image_marmut" class="custom-file-input" id="exampleInputFile">
+                      <input type="file" name="image_marmut" class="custom-file-input" id="exampleInputFile" required>
                       <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                     </div>
                   </div>
@@ -88,8 +87,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <button type="submit" name="editMarmut" class="btn btn-primary">Submit</button>
-                <a href="<?= base_url() . "admin/list" ?>" class="btn btn-secondary">Cancel</a>
+                <button type="submit" name="addMarmut" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
