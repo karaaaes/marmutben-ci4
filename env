@@ -20,7 +20,7 @@
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://10.3.231.52/marmutben-codeigniter4/'
+app.baseURL = 'http://192.168.137.1/marmutben-codeigniter4/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false

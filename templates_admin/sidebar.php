@@ -42,7 +42,7 @@
           <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="http://localhost/marmutben/admin/index.php" class="nav-link">Home</a>
+          <a href="<?= base_url() . "admin/" ?>" class="nav-link">Home</a>
         </li>
       </ul>
 
@@ -195,7 +195,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./promo.php" class="nav-link" id="promo-tab">
+                  <a href="<?= base_url() . "admin/promo" ?>" class="nav-link" id="promo-tab">
                     <!-- Tambahkan id="promo-tab" di sini -->
                     <i class="far fa-circle nav-icon"></i>
                     <p>Promo</p>
@@ -213,7 +213,7 @@
             </li>
             <li class="nav-item" id="logout">
               <!-- Tambahkan id="logout" di sini -->
-              <a href="iframe.html" class="nav-link" id="logout-link">
+              <a href="<?= base_url() . "admin/logout" ?>" class="nav-link" id="logout-link">
                 <!-- Tambahkan id="logout-link" di sini -->
                 <i class="nav-icon fas fa-ellipsis-h"></i>
                 <p>Logout</p>

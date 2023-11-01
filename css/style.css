@@ -674,9 +674,10 @@ ul.right_icon li img {
 .news_text_promo p {
      color: #141414;
      font-size: 12px;
-     line-height: 32px;
+     line-height: 24px;
      font-weight: 400;
      padding-top: 5px;
+     margin-bottom: 5px;
 }
 
 .news_img {

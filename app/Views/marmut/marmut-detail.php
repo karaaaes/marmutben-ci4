@@ -262,6 +262,7 @@
                      `Kode Promo Berhasil Digunakan. Kamu mendapatkan promo sebesar ${formattedJumlahPromo}!`;
 
                   var hargaMarmut = originalHargaMarmut - parseFloat(data.jumlahPromo);
+                  hargaMarmut = Math.max(hargaMarmut, 0); // Mengubah menjadi 0 jika harga marmut minus
                   hargaMarmutInput.value = hargaMarmut;
 
                   discountedPrice.innerHTML =
@@ -269,13 +270,12 @@
                } else {
                   hargaMarmutInput.value = originalHargaMarmut;
                }
+
             })
             .catch(error => {
                console.error("Terjadi kesalahan saat mengambil data:", error);
             });
       }
-
-
    }
 </script>
 <?php 

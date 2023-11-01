@@ -8,6 +8,17 @@
     <div class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
+                <div class="col-sm-12">
+                <?php if (session()->getFlashdata('success_message')): ?>
+          <div class="alert alert-success">
+            <?= session()->getFlashdata('success_message') ?>
+          </div>
+          <?php elseif (session()->getFlashdata('error_message')): ?>
+          <div class="alert alert-danger">
+            <?= session()->getFlashdata('error_message') ?>
+          </div>
+          <?php endif; ?>
+                </div>
                 <div class="col-sm-6">
                     <h1 class="m-0">Dashboard</h1>
                 </div><!-- /.col -->

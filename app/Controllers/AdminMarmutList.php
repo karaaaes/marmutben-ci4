@@ -29,7 +29,6 @@ class AdminMarmutList extends BaseController
         $description = $postData['description'];
         $dateCreated = date("Y-m-d H:i:s");
 
-    
         // Mengatur direktori tempat menyimpan gambar
         $imageFile = $this->request->getFile('image_marmut');
         $imageExtension = $imageFile->getClientExtension();
