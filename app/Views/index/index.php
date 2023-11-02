@@ -55,7 +55,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=1">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut-new.png"
+                     <figure><img src="images/icon-little-marmut-new.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -69,7 +69,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=2">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut3.png"
+                     <figure><img src="images/icon-little-marmut3.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -83,7 +83,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=3">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut-new1.png"
+                     <figure><img src="images/icon-little-marmut-new1.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -97,7 +97,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=4">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut4.png"
+                     <figure><img src="images/icon-little-marmut4.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -111,7 +111,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=5">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut5.png"
+                     <figure><img src="images/icon-little-marmut5.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -125,7 +125,7 @@ include('core/core_functions.php');
             <a href="kategori-detail.php?categories=6">
                <div class="news_item">
                   <div class="news_img_kategori">
-                     <figure><img src="images/icon-little-marmut6.png"
+                     <figure><img src="images/icon-little-marmut6.webp"
                            alt="display marmut murah meriah 2023. marmutben, tempat jual beli marmut termurah !">
                      </figure>
                   </div>
@@ -195,7 +195,7 @@ include('core/core_functions.php');
 
    <!-- fashion section -->
    <div class="fashion">
-      <img src="images/big-banner.jpg" alt="banner promo marmut" />
+      <img src="images/big-banner.webp" alt="banner promo marmut" />
    </div>
    <!-- end fashion section -->
 

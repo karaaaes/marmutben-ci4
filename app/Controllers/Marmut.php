@@ -68,6 +68,8 @@ class Marmut extends BaseController
     public function buy(){
         $postData = $this->request->getPost();
         
+        $idMarmut = $postData['id'];
+        $idCategories = $postData['id_categories'];
         $marmutName = $postData['nama_marmut'];
         $marmutJumlah = $postData['jumlah'];
         $marmutHarga = $postData['harga_marmut'];
@@ -76,6 +78,8 @@ class Marmut extends BaseController
         $receiverName = $postData['receiver_name'];
         $receiverPhone = $postData['receiver_phone'];
         $receiverLocation = $postData['receiver_location'];
+
+        $url = base_url() . "details/$idMarmut/$idCategories";
 
         $array = [
             "receiverName" => $receiverName,
@@ -96,7 +100,7 @@ class Marmut extends BaseController
         }
 
         // Lakukan redirect ke URL WhatsApp
-        $text = "text=Halo%2C%20nama%20saya%20$receiverName%20ingin%20membeli%20$marmutName%20$marmutCategories%20dengan%20jumlah%20$marmutJumlah%20pcs%20dan%20mendapatkan%20harga%20Rp%20$marmutHarga.%20Harga%20tersebut%20belum%20termasuk%20ongkir.%0A%0AHubungi saya%0AWhatsapp%20:%20$receiverPhone%0ALokasi%20:%20$receiverLocation";
+        $text = "text=Halo%2C%20nama%20saya%20$receiverName%20ingin%20membeli%20$marmutName%20$marmutCategories%20dengan%20jumlah%20$marmutJumlah%20pcs%20dan%20mendapatkan%20harga%20Rp%20$marmutHarga.%20Harga%20tersebut%20belum%20termasuk%20ongkir.%0A%0AHubungi saya%0AWhatsapp%20:%20$receiverPhone%0ALokasi%20:%20$receiverLocation%0ALink%20Marmut%20:%20$url";
         $url = "https://api.whatsapp.com/send?phone=6287780605997&$text";
 
         return redirect()->to($url);

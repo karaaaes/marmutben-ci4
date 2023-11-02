@@ -40,14 +40,14 @@ $routes->group('admin', ['filter' => 'sessioncheck'], function (RouteCollection 
 
     $routes->add('best_seller', 'AdminBestSeller::index');
     $routes->add('best_seller/(:num)/(:num)', 'AdminBestSeller::edit/$1/$2');
-    $routes->add('best_seller', 'AdminBestSeller::action_edit', ['post']);
+    $routes->add('best_seller/action_edit', 'AdminBestSeller::action_edit', ['post']);
     
     $routes->add('list', 'AdminMarmutList::index');
     $routes->add('list/(:num)', 'AdminMarmutList::edit/$1');
-    $routes->add('list', 'AdminMarmutList::action_edit', ['post']);
+    $routes->add('list/action_edit', 'AdminMarmutList::action_edit', ['post']);
     $routes->add('list/add', 'AdminMarmutList::add');
-    $routes->add('list/add', 'AdminMarmutList::action_add', ['post']);
-    $routes->add('list/delete', 'AdminMarmutList::action_delete', ['post']);
+    $routes->add('list/add/action_add', 'AdminMarmutList::action_add', ['post']);
+    $routes->add('list/action_delete', 'AdminMarmutList::action_delete', ['post']);
     
     $routes->add('ongkir', 'AdminOngkir::index');
     $routes->add('ongkir/import_ongkir', 'AdminOngkir::import_ongkir', ['post']);

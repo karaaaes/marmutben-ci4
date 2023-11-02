@@ -35,7 +35,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="<?= base_url() . "admin/best_seller" ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url() . "admin/best_seller/action_edit" ?>" method="post" enctype="multipart/form-data">
               <input type="text" name="widget_id" class="form-control" value="<?= $marmutWidget[0]['id']; ?>" hidden>
               <div class="card-body">
                 <div class="form-group">

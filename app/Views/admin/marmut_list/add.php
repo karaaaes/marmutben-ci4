@@ -34,7 +34,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="<?= base_url() . "admin/list/add" ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url() . "admin/list/add/action_add" ?>" method="post" enctype="multipart/form-data">
               <div class="card-body">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Nama Marmut</label>

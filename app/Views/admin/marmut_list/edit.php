@@ -34,7 +34,7 @@
             </div>
             <!-- /.card-header -->
             <!-- form start -->
-            <form action="<?= base_url() . "admin/list" ?>" method="post" enctype="multipart/form-data">
+            <form action="<?= base_url() . "admin/list/action_edit" ?>" method="post" enctype="multipart/form-data">
               <input type="text" name="id_marmut" class="form-control" value="<?= $getMarmut[0]['id'] ?>" hidden>
               <div class="card-body">
                 <div class="form-group">

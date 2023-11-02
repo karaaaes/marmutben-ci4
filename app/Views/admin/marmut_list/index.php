@@ -74,7 +74,7 @@
                     <td>5</td>
                     <td>
                       <a href="<?= base_url() . "admin/list/".$data['id'] ?>" class="btn btn-block bg-gradient-warning btn-xs">Edit</a>
-                      <form action="<?= base_url() . "admin/list/delete" ?>" method="post" enctype="multipart/form-data">
+                      <form action="<?= base_url() . "admin/list/action_delete" ?>" method="post" enctype="multipart/form-data">
                         <input name="id_marmut" value="<?= $data['id']; ?>" hidden>
                         <button type="submit" name="deleteMarmut" class="btn btn-block bg-gradient-danger btn-xs">Delete</button>
                       </form>

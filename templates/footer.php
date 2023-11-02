@@ -11,7 +11,7 @@
                         <div class="footer-item">
                            <a href="https://maps.app.goo.gl/11a1gvqxpGcTbLYr9">
                               <div class="account-user">
-                                 <img class="footer-icon" src="<?= base_url('images/google-maps-icon.png'); ?>" alt="google maps marmutben"
+                                 <img class="footer-icon" src="<?= base_url('images/google-maps-icon.webp'); ?>" alt="google maps marmutben"
                                     style="width:20px; height: 20px;">Toko Marmut Murah Benben
                               </div>
                            </a>
@@ -32,7 +32,7 @@
                         <div class="footer-item">
                            <a href="https://maps.app.goo.gl/BtAxMZ8cFB9HJZPG7">
                               <div class="account-user">
-                                 <img class="footer-icon" src="<?= base_url('images/google-maps-icon.png'); ?>" alt="google maps marmutben"
+                                 <img class="footer-icon" src="<?= base_url('images/google-maps-icon.webp'); ?>" alt="google maps marmutben"
                                     style="width:20px; height: 20px;">RUMAH ANDRA
                               </div>
                            </a>
@@ -55,7 +55,7 @@
                         <div class="footer-item">
                            <a href="https://www.instagram.com/marmut.murah/">
                               <div class="account-user">
-                                 <img class="footer-icon" src="<?= base_url('images/instagram-icon.png'); ?>" alt="Instagram Marmutben">
+                                 <img class="footer-icon" src="<?= base_url('images/instagram-icon.webp'); ?>" alt="Instagram Marmutben">
                                  @marmut.murah
                               </div>
                            </a>
@@ -63,7 +63,7 @@
                         <div class="footer-item">
                            <a href="https://api.whatsapp.com/send?phone=6287780605997">
                               <div class="account-user">
-                                 <img class="footer-icon" src="<?= base_url('images/whatsapp-icon.png'); ?>" alt="Whatsapp Marmutben">
+                                 <img class="footer-icon" src="<?= base_url('images/whatsapp-icon.webp'); ?>" alt="Whatsapp Marmutben">
                                  +62 877-8060-5997
                               </div>
                            </a>

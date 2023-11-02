@@ -65,7 +65,7 @@ class MAdminbestseller extends Model
 
     public function updateBestSeller($widgetId, $marmut_id, $jumlah_terjual){
         // Contoh menjalankan kueri SQL SELECT
-        $query = $this->db->query("
+        $this->db->query("
             UPDATE t_marmutben_best_sellers
             SET `marmut_id` = '$marmut_id', `jumlah_terjual` = '$jumlah_terjual'
             WHERE id = '$widgetId'

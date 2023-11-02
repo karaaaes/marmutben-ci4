@@ -120,6 +120,10 @@
                               placeholder="Lokasi Pembeli" required>
                            <div class="stock-selector mt-3 mb-2 justify-content-center">
                               <btn class="stock-button minus-button mr-3">-</btn>
+                              <input type="text" name="id"
+                                 value="<?php echo $dataDetailMarmut[0]['id']; ?>" hidden>
+                              <input type="text" name="id_categories"
+                                 value="<?php echo $dataDetailMarmut[0]['categories_marmut']; ?>" hidden>
                               <input type="text" name="nama_marmut"
                                  value="<?php echo $dataDetailMarmut[0]['jenis_marmut']; ?>" hidden>
                               <input type="text" name="kategori_marmut"
