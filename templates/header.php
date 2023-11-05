@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+   <title>MARMUTBEN | Jual beli Marmut murah terpercaya</title>
    <!-- basic -->
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
    <!-- site metas -->
-   <title>MARMUTBEN | Jual beli Marmut murah terpercaya</title>
    <meta name="keywords" content="marmut murah, jual marmut 2023, marmut terdekat, marmutben">
    <meta name="description" content="Jual Beli Marmut Terpercaya - Bekasi">
    <meta name="author" content="Marmutben">
@@ -17,19 +17,18 @@
    <meta name="abstract"
       content="Selamat datang di marmutben.rakaeshardiansyah.my.id - Destinasi Terbaik untuk Marmut Impian Anda! Temukan koleksi eksklusif kami dari marmut yang lucu dan menggemaskan. Kami menyediakan marmut dengan beragam jenis, warna, dan karakter unik. Jelajahi sekarang dan bawa pulang teman berbulu Anda hari ini!">
    <!-- bootstrap css -->
-   <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url('css/bootstrap.min.css'); ?>" async>
+   <link href="<?= base_url() . "images/icon-little-marmut-new.webp" ?>" rel='icon marmutben marmut murah' async>
    <!-- style css -->
-   <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url('css/style.css'); ?>" async>
    <!-- Responsive-->
-   <link rel="stylesheet" href="<?= base_url('css/responsive.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url('css/responsive.css'); ?>" async>
    <!-- fevicon -->
-   <link rel="icon" href="<?= base_url('images/fevicon.png'); ?>" type="image/gif" />
+   <link rel="icon" href="<?= base_url('images/fevicon.png'); ?>" type="image/gif" async/>
    <!-- Scrollbar Custom CSS -->
-   <link rel="stylesheet" href="<?= base_url('css/jquery.mCustomScrollbar.min.css'); ?>">
+   <link rel="stylesheet" href="<?= base_url('css/jquery.mCustomScrollbar.min.css'); ?>" async>
    <!-- Tweaks for older IEs-->
-   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen">
+   <!-- <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" async> -->
    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->

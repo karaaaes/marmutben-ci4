@@ -19,7 +19,7 @@
             <div class="col-md-6 each-promo">
                 <div class="row d_flex">
                     <div class="col-md-4 news_img_promo">
-                        <figure><img src="<?php echo $promo['image_promo']; ?>"></figure>
+                        <figure><img src="<?php echo $promo['image_promo']; ?>" alt="promo marmut marmutben"></figure>
                     </div>
                     <div class="col-md-8">
                         <div class="news_text_promo" style="">
