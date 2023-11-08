@@ -2145,9 +2145,15 @@ ul.right_icon li img {
      margin-bottom:0px;
  }
 
+ .container-footer{
+     max-width: 1300px;
+ }
+
  @media screen and (max-width: 768px){
      .alert-notification{
           margin-top:20px; 
           margin-bottom:0px;
       }
  }
+
+ 
