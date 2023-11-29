@@ -1,0 +1,486 @@
+.reseller {
+    margin-top: 100px;
+}
+
+.title-reseller {
+    margin-top: 55px;
+}
+
+.title-reseller h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.description-reseller {
+    margin-top: 20px;
+}
+
+.description-reseller p {
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.register-button {
+    margin-top: 20px;
+    background-color: #435334;
+    padding: 8px 0px;
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    color: #fff;
+}
+
+.register-button:hover {
+    background-color: #9EB384;
+    color: black;
+}
+
+.list-reseller-button {
+    margin-top: 20px;
+    margin-left: 15px;
+    background-color: #D9D9D9;
+    padding: 8px 0px;
+    width: 100%;
+    border-radius: 20px;
+    display: inline-block;
+    max-width: 150px;
+    text-align: center;
+    color: black;
+}
+
+.row-index {
+    padding-top: 55px;
+    padding-bottom: 70px;
+}
+
+.title-benefit h3 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.title-reseller-list h3 {
+    color: black;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.description-benefit {
+    display: flex;
+    margin-top: 25px;
+}
+
+.reseller-list {
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    padding: 10px;
+    border: 0;
+    min-width: 350px;
+    height: 100%;
+    width: 18rem;
+}
+
+.card .card-photo {
+    border-radius: 20px;
+    /* background-color: black; */
+    height: 200px;
+    border: 0;
+}
+
+.card-photo img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    border: 0;
+}
+
+.card-body {
+    padding: 10px
+}
+
+.card-body .card-title {
+    margin-bottom: 2px;
+    pointer-events: none;
+}
+
+.card-body h5 {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.card-body p {
+    margin-top: 7px;
+    font-size: 14px;
+    color: black;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    font-weight: 400;
+    min-height: 50px;
+    pointer-events: none;
+}
+
+.geo-location {
+    font-size: 12px;
+}
+
+.geo-location img {
+    margin-right: 5px;
+}
+
+.geo-location a {
+    color: #272829;
+}
+
+.geo-location a:hover {
+    color: #435334;
+}
+
+.star {
+    font-size: 12px;
+    display: flex;
+    margin-top: 2px;
+}
+
+.star img {
+    margin-right: 5px;
+}
+
+.star a {
+    color: #272829;
+}
+
+.card-contact {
+    display: flex;
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.card-contact .whatsapp-icon {
+    margin-right: 20px;
+}
+
+.whatsapp-icon img {
+    margin-right: 5px;
+}
+
+.instagram-icon img {
+    margin-right: 5px;
+}
+
+body {
+    overflow-x: hidden !important;
+    /* Menghilangkan scrollbar horizontal di body */
+}
+
+.slider-container {
+    width: 1100px !important;
+    /* Lebar viewport */
+    overflow: hidden !important;
+    /* Konten yang melebihi slider akan tersembunyi */
+}
+
+.swiper-container {
+    width: 100% !important;
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+}
+
+.swiper-wrapper {
+    display: flex !important;
+    width: 171px !important;
+    /* Sesuaikan ukuran wrapper dengan kontennya */
+    /* transition: transform 0.3s ease-in-out !important; */
+    /* Efek transisi saat slide berubah */
+}
+
+.swiper-slide {
+    text-align: center !important;
+    background: #fff !important;
+    border: 3px solid #9EB384 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 18px !important;
+    /* Sesuaikan lebar sesuai kebutuhan */
+    min-width: 5px !important;
+    height: 100% !important;
+    margin-right: 10px !important;
+    font-size: 16px !important;
+    border-radius: 20px !important;
+}
+
+
+.swiper-slide-active{
+    background: #435334 !important;
+    color: #fff;
+}
+
+.reseller-register{
+    margin-top: 80px;
+    background: url(../images/wallpaper-signup-reseller.svg);
+    background-size: cover;  /* atau background-size: contain; sesuai kebutuhan */
+    background-position: center center; /* Posisi latar belakang di tengah-tengah elemen */
+}
+
+.benefit-layer{
+    background-color: #435334;
+    max-width: 40% !important;
+    /* height: 600px; */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.reseller-benefit{
+    height: 100%;
+}
+
+.reseller-benefit-title{
+    font-size: 30px;
+    padding: 10px;
+    padding-bottom: 0px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.reseller-benefit-caption{
+    padding: 10px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.register-card {
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 100px;
+    height: 100%;
+    padding-bottom: 40px;
+}
+
+.register-card .card{
+    width: 30rem;
+}
+
+.card-title-reseller h5{
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+}
+
+label{
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+.form-control-register{
+    font-size: 14px;
+}
+
+.btn-register{
+    background-color: #435334;
+    border-color: #435334; 
+    width:100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+        /* Menghilangkan scrollbar horizontal di body */
+    }
+
+    .reseller-list{
+        margin-top: 25px;
+    }
+
+    .slider-container {
+        max-width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        /* Menengahkan slider */
+    }
+
+    .swiper-container {
+        width: 100% !important;
+        padding-top: 17px !important;
+        padding-left: 10px !important;
+    }
+
+    .swiper-wrapper {
+        display: flex !important;
+        width: 150px !important;
+    }
+
+    .swiper-slide {
+        text-align: center !important;
+        background: #fff !important;
+        border: 3px solid #9EB384 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        font-size: 18px !important;
+        min-width: 100% !important;
+        /* Menggunakan 100% lebar viewport pada mobile */
+        height: 100% !important;
+        margin-right: 10px !important;
+        font-size: 16px !important;
+        border-radius: 20px !important;
+    }
+
+    .swiper-slide-active{
+        background: #435334 !important;
+        color: #fff;
+    }
+
+
+    .reseller {
+        margin-top: 90px;
+    }
+
+    .reseller-list-card {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .starter-text {
+        margin-top: -20px;
+    }
+
+    .button-reseller {
+        display: block;
+    }
+
+    .register-button {
+        max-width: 100%;
+        text-align: center;
+        color: #fff;
+    }
+
+    .list-reseller-button {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .description-benefit {
+        display: block;
+    }
+
+    .benefit-item {
+        justify-content: center;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .card {
+        height: 110px;
+        width: 100%;
+        margin-top: 10px;
+        display: flex !important;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    .card a {
+        width: 70px;
+    }
+
+
+    .card .card-photo {
+        border-radius: 20px;
+        /* background-color: black; */
+        height: 90px;
+        width: 110px;
+        border: 0;
+    }
+
+    .card-body {
+        padding: 0px;
+        padding-top: 5px;
+        color: black !important;
+    }
+
+    .card-body h5 {
+        font-size: 16px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .card-body p {
+        display: none;
+    }
+
+    .card-contact {
+        display: none;
+    }
+
+    .geo-location{
+        margin-top: 6px;
+    }
+    
+    .star {
+        margin-top: 4px;
+    }
+
+    .row-index-reseller-list {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .reseller-register{
+        margin-top: 45px;
+    }
+
+    .row-reseller{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .benefit-layer{
+        max-width: 100% !important;
+    }
+
+    .register-card{
+        padding-right: 0px;
+        padding-left: 0px;
+        min-width: 100%;
+    }
+
+    .reseller-register{
+        /* background: none; */
+    }
+    
+    .register-card .card{
+        width: 15rem;
+        height: 100%;
+    }
+
+    .btn-register{
+        background-color: #435334;
+        border-color: #435334; 
+        width:100%;
+        font-size: 12px;
+    }
+
+    .reseller-benefit-title{
+        font-size: 28px;
+    }
+}

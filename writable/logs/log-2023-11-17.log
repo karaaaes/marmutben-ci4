@@ -1,0 +1,31 @@
+CRITICAL - 2023-11-17 08:02:21 --> Invalid file: "reseller.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reseller.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('reseller', [], true)
+ 3 APPPATH\Controllers\Reseller.php(11): view('reseller')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Reseller->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reseller))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 08:02:49 --> Undefined variable $dataWilayah
+in APPPATH\Views\reseller\index.php on line 22.
+ 1 APPPATH\Views\reseller\index.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataWilayah', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\reseller\\index.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\reseller\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('reseller/index', [], true)
+ 5 APPPATH\Controllers\Reseller.php(11): view('reseller/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Reseller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reseller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 08:03:02 --> Undefined variable $dataPromo
+in APPPATH\Views\reseller\index.php on line 87.
+ 1 APPPATH\Views\reseller\index.php(87): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dataPromo', 'C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\reseller\\index.php', 87)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\laragon\\www\\marmutben-codeigniter4\\app\\Views\\reseller\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('reseller/index', [], true)
+ 5 APPPATH\Controllers\Reseller.php(11): view('reseller/index')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Reseller->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Reseller))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

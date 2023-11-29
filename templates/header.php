@@ -91,6 +91,9 @@ function getBaseUrl() {
                               <li class="nav-item">
                                  <a class="nav-link" href="<?php echo base_url() . "paket" ?>">Cek Paket Marmut</a>
                               </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="<?php echo base_url() . "reseller" ?>">Reseller</a>
+                              </li>
                            </ul>
                         </div>
                      </nav>

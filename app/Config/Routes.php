@@ -33,6 +33,11 @@ $routes->get('/admin/login', 'AdminLogin::index');
 $routes->post('/admin/login', 'AdminLogin::login');
 $routes->get('/admin/logout', 'AdminLogin::logout');
 
+// Reseller Section
+$routes->get('/reseller', 'Reseller::index');
+$routes->get('/daftar-reseller', 'Reseller::register');
+
+
 $routes->group('admin', ['filter' => 'sessioncheck'], function (RouteCollection $routes) {
     $routes->add('/', 'AdminHome::index');
     $routes->add('log', 'AdminHome::log');
